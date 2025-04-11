@@ -55,3 +55,11 @@ console.log('Graduation Year:', clonedStudent);
 const newCourses = ['Operating Sys', 'Tech Writing'];
 const allCourses = [...student.courses, ...newCourses];
 console.log('All Courses:', allCourses);
+
+// trying out the object methods
+console.log('Course count (before):', student.getCourseCount());
+
+student.addCourse('AI');
+
+console.log('Course count (after):', student.getCourseCount());
+console.log('Updated Courses:', student.courses);
