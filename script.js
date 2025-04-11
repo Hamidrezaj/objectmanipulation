@@ -59,7 +59,15 @@ console.log('All Courses:', allCourses);
 // trying out the object methods
 console.log('Course count (before):', student.getCourseCount());
 
+// add course
 student.addCourse('AI');
 
 console.log('Course count (after):', student.getCourseCount());
 console.log('Updated Courses:', student.courses);
+
+//bonus: reduce to calculate average scores
+
+const total = scores.reduce((sum, score) => sum + score, 0);
+const average = total / scores.length;
+
+console.log('Average Score:', average);
