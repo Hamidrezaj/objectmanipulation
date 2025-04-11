@@ -19,3 +19,7 @@ console.log(student.getInfo());
 //Convert the student object to a JSON string
 const jsonString = JSON.stringify(student);
 console.log('JSON String:', jsonString);
+
+//Convert the JSON string back to a JavaScript object
+const newStudent = JSON.parse(jsonString);
+console.log('Converted Back to Object:', newStudent);
