@@ -23,3 +23,9 @@ console.log('JSON String:', jsonString);
 //Convert the JSON string back to a JavaScript object
 const newStudent = JSON.parse(jsonString);
 console.log('Converted Back to Object:', newStudent);
+
+//Part 3
+const { name, courses } = student;
+
+console.log('Destructured Name:', name);
+console.log('Destructured Courses:', courses);
