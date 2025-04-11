@@ -8,6 +8,11 @@ const student = {
       this.enrolled ? 'enrolled' : 'not enrolled'
     } in ${this.courses.length} course(s).`;
   },
+
+  addCourse: function (newCourse) {
+    this.courses.push(newCourse);
+    console.log(`Course "${newCourse}" added.`);
+  },
 };
 
 console.log('Name:', student.name);
