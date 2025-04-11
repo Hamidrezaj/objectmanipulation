@@ -13,6 +13,10 @@ const student = {
     this.courses.push(newCourse);
     console.log(`Course "${newCourse}" added.`);
   },
+
+  getCourseCount: function () {
+    return this.courses.length;
+  },
 };
 
 console.log('Name:', student.name);
